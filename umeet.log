@@ -1,0 +1,27 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /Login                    --> Umeet/controller.Login (3 handlers)
+[GIN-debug] POST   /Register                 --> Umeet/controller.Register (3 handlers)
+[GIN-debug] GET    /VerifyUser               --> Umeet/controller.VerifyUser (3 handlers)
+[GIN-debug] GET    /UpdateToken              --> Umeet/controller.UpdateToken (3 handlers)
+[GIN-debug] POST   /user/GetPost             --> Umeet/controller.GetUserPost (4 handlers)
+[GIN-debug] GET    /post/GetHomePosts        --> Umeet/controller.GetHomePost (4 handlers)
+[GIN-debug] POST   /post/AddPost             --> Umeet/controller.AddPost (4 handlers)
+[GIN-debug] GET    /post/GetPostInfo         --> Umeet/controller.GetPostInfoByPID (4 handlers)
+[GIN-debug] GET    /post/LikeorNot           --> Umeet/controller.LikePostByRedis (4 handlers)
+[GIN-debug] DELETE /post/DeletePost          --> Umeet/controller.DeletePost (4 handlers)
+[GIN-debug] POST   /comment/AddRootComment   --> Umeet/controller.AddRootComment (4 handlers)
+[GIN-debug] POST   /comment/AddChildComment  --> Umeet/controller.AddChildComment (4 handlers)
+[GIN-debug] DELETE /comment/DeleteComment    --> Umeet/controller.DeleteComment (4 handlers)
+[GIN-debug] GET    /comment/getComments      --> Umeet/controller.GetRootComments (4 handlers)
+[GIN-debug] GET    /comment/getChildrenComments --> Umeet/controller.GetChildComment (4 handlers)
+[GIN-debug] GET    /room1                    --> Umeet/router.Router.func1 (3 handlers)
+[GIN-debug] GET    /room2                    --> Umeet/router.Router.func2 (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on 192.168.2.116:8080
+[GIN] 2024/02/05 - 00:02:40 | 200 |            0s |   192.168.2.116 | GET      "/room1"
